@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     outputs:
-      tag: ${{ steps.get_version.outputs.tag }}
+      tag: 1.01
       is_beta: ${{ steps.get_version.outputs.is_beta }}
 
     steps:
@@ -45,7 +45,7 @@ jobs:
     needs:
       - prelude
 
-    runs-on: ubuntu-latest-4-cores
+    runs-on: ubuntu-latest
 
     defaults:
       run:
